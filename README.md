@@ -62,7 +62,7 @@ In our paper, we show the out-of-the-box perks of uncertainty-aware modelling fo
 
 ### Post-hoc novel data detection (PhNDD)
 
-PhNDD is a post-hoc setting proposed in our paper for evaluating the novel data detection capabilities of a finetuning algorithm within the continual learning setting. To evoke this, simply pass the argument `--eval-ood-score` in the script.
+- PhNDD is a post-hoc setting proposed in our paper for evaluating the novel data detection capabilities of a finetuning algorithm within the continual learning setting. To evoke this, simply pass the argument `--eval-ood-score` in the script.
 
 ### Exemplar selection
 - For all but the zero-shot models, the repo implements the following exemplar selection criteria: Random, Herding, Entropy, Variance, Variance of entropy, and Energy scores. These can simply be evoked by passing the values [`random`, `icarl`, `entropy`, `variance`, `distance`, `var_entropy`, `energy`], respectively to the argument `--exemplar-selector`.
