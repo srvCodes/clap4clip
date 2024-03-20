@@ -29,9 +29,9 @@ git clone https://github.com/srvCodes/clap4clip.git
 cd clap4clip
 mkdir ckpt/
 ```
-Download models: Download the pretrained ViT-B-16.pt and ViT-L-14.pt checkpoints to `ckpt/` directory. 
+- Download models: Download the pretrained ViT-B-16.pt and ViT-L-14.pt checkpoints to `ckpt/` directory. 
 
-Download datasets: We suggest following the [mammoth](https://github.com/aimagelab/mammoth) library to download all the datasets into the repo `datasets/`. Instructions for ImageNet-R can be found [here](https://github.com/muzairkhattak/multimodal-prompt-learning/blob/main/docs/DATASETS.md).
+- Download datasets: We suggest following the [mammoth](https://github.com/aimagelab/mammoth) library to download all the datasets into the repo `datasets/`. Instructions for ImageNet-R can be found [here](https://github.com/muzairkhattak/multimodal-prompt-learning/blob/main/docs/DATASETS.md).
 
 
 ## What is in this repo?
