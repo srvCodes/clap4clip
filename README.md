@@ -75,4 +75,11 @@ In our paper, we show the out-of-the-box perks of uncertainty-aware modelling fo
 If you want to cite this framework feel free to use this preprint citation:
 
 ```bibtex
+@article{jha_clap4clip,
+  title={CLAP4CLIP: Continual Learning with Probabilistic Finetuning for Vision-Language Models},
+  author={Jha, Saurav and Gong, Dong and Yao, Lina},
+  journal={arXiv preprint arXiv:2403.19137},
+  year={2024}
+}
+
 ```
