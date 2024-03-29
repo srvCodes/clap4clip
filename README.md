@@ -1,6 +1,6 @@
 <div align="center">
 
-# CLAP4CLIP: Continual Learning with Probabilistic Finetuning for Vision-Language Models
+# CLAP4CLIP: Continual Learning with Probabilistic Finetuning for Vision-Language Models [[Paper]](https://arxiv.org/pdf/2403.19137.pdf)
 
 <p align="center">
   <a href="#what-is-clap4clip">What is CLAP4CLIP?</a> •
@@ -17,7 +17,7 @@
 
 ![alt text](https://github.com/srvCodes/clap4clip/blob/main/images/Slide13-1.png "Logo Title Text 1")
 
-CLAP4CLIP is a general probabilistic finetuning framework for the pre-trained CLIP model on downstream class-incremental learning tasks.
+[CLAP4CLIP](https://arxiv.org/pdf/2403.19137.pdf) is a general probabilistic finetuning framework for the pre-trained CLIP model on downstream class-incremental learning tasks.
 
 The framework is general because it supports a diverse range of prompt styles including hand-crafted prompts like [Continual-CLIP](https://arxiv.org/abs/2210.03114), task-conditioned prompts like [CoOp](https://arxiv.org/abs/2109.01134), instance-conditioned prompts like [AttriCLIP](https://arxiv.org/abs/2305.11488), and multi-modal prompts like [MaPLe](https://arxiv.org/abs/2210.03117).
 
