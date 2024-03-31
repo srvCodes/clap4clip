@@ -40,11 +40,11 @@ This repo is designed with the aim of benchmarking various finetuning methods fo
 
 The instructions below depict how to run the models provided with the initial release on CIFAR100 (check the repo `scripts/`):
 
-- CLAP4CLIP with hand-crafted prompts (our base model):
+- CLAP4CLIP with hand-crafted prompts (our base CLAP model):
 ```
 python3 main_incremental_submit.py --lasp --beta 15 --db_name cifar100 --use-vga --expandable-adapter --finetuning --finetune-epochs 2 --num-run 10 --compute-ece --compute-bwt --train_batch 32 --exemplar-selector random --root ../path_to_datasets/ --multi-gpu --gpus 0,1 --default-gpu 0 --model clclip_var --epochs 5 --forward-times 20 --arch ViT-B-16  --method er --variational
 ```
-- Zero-shot CLIP:
+- Continual-CLIP (zero-shot):
 ```
 python3 main_incremental_submit.py --db_name cifar100 --num-run 10 --compute-ece --compute-bwt --train_batch 32 --root ../path_to_datasets/ --multi-gpu --gpus 0,1 --default-gpu 0 --model clclip --arch ViT-B-16
 ```
@@ -68,7 +68,7 @@ In our paper, we show the out-of-the-box perks of uncertainty-aware modelling fo
 - PhNDD is a post-hoc setting proposed in our paper for evaluating the novel data detection capabilities of a finetuning algorithm within the continual learning setting. To evoke this, simply pass the argument `--eval-ood-score` in the script.
 
 ### Exemplar selection
-- For all but the zero-shot models, the repo implements the following exemplar selection criteria: Random, Herding, Entropy, Variance, Variance of entropy, and Energy scores. These can simply be evoked by passing the values [`random`, `icarl`, `entropy`, `variance`, `distance`, `var_entropy`, `energy`], respectively to the argument `--exemplar-selector`.
+- For all but the zero-shot models, the repo implements the following exemplar selection criteria: Random, Herding, Entropy, Variance, Variance of entropy, and Energy scores. These can simply be evoked by passing the value `x` to the argument `--exemplar-selector`, where `x` can be {`random`, `icarl`, `entropy`, `variance`, `distance`, `var_entropy`, `energy`}.
 
 ## Cite
 
