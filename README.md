@@ -6,6 +6,7 @@
   <a href="#what-is-clap4clip">What is CLAP4CLIP?</a> •
   <a href="#get-going">Get going</a> •
   <a href="#what-is-in-this-repo">What is in this repo?</a> •
+  <a href="#language-aware-knowledge">Language-aware knowledge</a> •
     <a href="#uncertainty-related-ablations">Uncertainty-related ablations</a> •
   <a href="#cite">Cite</a>
 </p>
@@ -59,7 +60,7 @@ We plan to release the following models upon the acceptance of our paper:
 - AttriCLIP
 - CLAP4CLIP with support for CoOp/MaPLe/AttriCLIP
 
-## Language-aware CLIP knowledge
+## Language-aware knowledge
 
 - Past-task distribution regularization (for reducing **forgetting** in general): Can be evoked by passing the argument `--lasp --beta` $\gamma$ where $\gamma$ is the loss weight used in Eq. (12) in our paper.
 - Weight initialization (for reducing **stability gap**): Currently, controlled by commenting/uncommenting [this line](https://github.com/srvCodes/clap4clip/blob/main/classifier/continual_clip_variational.py#L99).
