@@ -1,0 +1,16 @@
+matplotlib @ file:///croot/matplotlib-suite_1693812469450/work
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+numpy @ file:///croot/numpy_and_numpy_base_1682520569166/work
+numpydoc @ file:///croot/numpydoc_1668085905352/work
+pandas @ file:///croot/pandas_1692289311655/work
+protobuf==4.25.2
+scikit-image @ file:///croot/scikit-image_1669241743693/work
+scikit-learn @ file:///croot/scikit-learn_1694788527225/work
+scikit-learn-intelex==20230228.214413
+scipy @ file:///tmp/build/80754af9/scipy_1630606796110/work
+seaborn @ file:///croot/seaborn_1673479180098/work
+statsmodels @ file:///croot/statsmodels_1689937266057/work
+tb-nightly==2.14.0a20230808
+torch==2.1.2
+torchmetrics==1.2.1
+torchvision==0.16.2
