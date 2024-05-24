@@ -20,7 +20,10 @@
 
 [CLAP4CLIP](https://arxiv.org/pdf/2403.19137v2) is a general probabilistic finetuning framework for the pre-trained CLIP model on downstream class-incremental learning tasks.
 
-The framework is general because it supports a diverse range of prompt styles including hand-crafted prompts like [Continual-CLIP](https://arxiv.org/abs/2210.03114), task-conditioned prompts like [CoOp](https://arxiv.org/abs/2109.01134), instance-conditioned prompts like [AttriCLIP](https://arxiv.org/abs/2305.11488), and multi-modal prompts like [MaPLe](https://arxiv.org/abs/2210.03117).
+The framework is general because (as depicted below) it supports a diverse range of prompt styles including hand-crafted prompts like [Continual-CLIP](https://arxiv.org/abs/2210.03114), task-conditioned prompts like [CoOp](https://arxiv.org/abs/2109.01134), instance-conditioned prompts like [AttriCLIP](https://arxiv.org/abs/2305.11488), and multi-modal prompts like [MaPLe](https://arxiv.org/abs/2210.03117):
+
+![alt text](https://github.com/srvCodes/clap4clip/blob/main/images/Screenshot%202024-05-24%20162355.png)
+
 
 ## Get going
 
