@@ -2,6 +2,8 @@
 
 # CLAP4CLIP: Continual Learning with Probabilistic Finetuning for Vision-Language Models [[Paper]](https://arxiv.org/pdf/2403.19137v2)
 
+## ✨ ***Now accepted to NeurIPS 2024!*** ✨
+
 <p align="center">
   <a href="#what-is-clap4clip">What is CLAP4CLIP?</a> •
   <a href="#get-going">Get going</a> •
@@ -84,11 +86,11 @@ In our paper, we show the out-of-the-box perks of uncertainty-aware modelling fo
 If you want to cite this framework feel free to use this preprint citation:
 
 ```bibtex
-@article{jha_clap4clip,
-  title={CLAP4CLIP: Continual Learning with Probabilistic Finetuning for Vision-Language Models},
-  author={Jha, Saurav and Gong, Dong and Yao, Lina},
-  journal={arXiv preprint arXiv:2403.19137},
-  year={2024}
+@inproceedings{jha2024clap4clip,
+  title={{CLAP4CLIP}: Continual Learning with Probabilistic Finetuning for Vision-Language Models},
+  author={Saurav Jha and Dong Gong and Lina Yao},
+  booktitle={Thirty-eighth Conference on Neural Information Processing Systems},
+  year={2024},
+  url={https://arxiv.org/pdf/2403.19137}
 }
-
 ```
