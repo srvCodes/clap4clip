@@ -44,7 +44,7 @@ mkdir ckpt/
 
 This repo is designed with the aim of benchmarking various finetuning methods for class-incremental learning with the pre-trained CLIP model.
 
-The instructions below depict how to run the models provided with the initial release on CIFAR100 (check the repo `scripts/`):
+The instructions below depict how to run the models provided with the initial release on CIFAR100 (check the repo `scripts/` and edit ):
 
 - CLAP4CLIP with hand-crafted prompts (our base CLAP model):
 ```
@@ -58,12 +58,21 @@ python3 main_incremental_submit.py --db_name cifar100 --num-run 10 --compute-ece
 ```
 python3 main_incremental_submit.py --db_name cifar100 --finetuning --finetune-epochs 2 --num-run 10 --compute-ece --compute-bwt --train_batch 32 --exemplar-selector random --root ../path_to_datasets/ --multi-gpu --gpus 0,1 --default-gpu 0 --model clip_adapter --epochs 5 --arch ViT-B-16 --method er
 ```
+- CLAP with CoOp:
+```
+python3 main_incremental_submit.py --db_name cifar100 --num-run 10 --compute-ece --compute-bwt --train_batch 32 --root ../path_to_datasets/ --multi-gpu --gpus 0,1 --default-gpu 0 --model coop_variational --arch ViT-B-16
+```
+- CLAP with MaPLe:
+```
+python3 main_incremental_submit.py --db_name cifar100 --num-run 10 --compute-ece --compute-bwt --train_batch 32 --root ../path_to_datasets/ --multi-gpu --gpus 0,1 --default-gpu 0 --model maple_variational --arch ViT-B-16
+```
+- CoOp with Adapter (used in Fig. 3b in the paper):
+```
+python3 main_incremental_submit.py --db_name cifar100 --num-run 10 --compute-ece --compute-bwt --train_batch 32 --root ../path_to_datasets/ --multi-gpu --gpus 0,1 --default-gpu 0 --model coop_adapter --arch ViT-B-16
+```
 
 We plan to release the following models upon the acceptance of our paper:
-- CoOp
-- MaPLe
-- AttriCLIP
-- CLAP4CLIP with support for CoOp/MaPLe/AttriCLIP
+- ~~CLAP4CLIP with support for CoOp/MaPLe~~ Now released!
 
 ## Language-aware knowledge
 
