@@ -8,6 +8,9 @@ import pickle
 from classifier.zero_shot import ZeroshotCLIP
 from classifier.clip_adapter import ClipAdapter
 from classifier.continual_clip_variational import ClClipVariational
+from classifier.coop_variational import CoOpVariational
+from classifier.coop_adapter import CoOpAdapter
+from classifier.maple_variational import MaPLe_var
 import dataset.incremental_dataloader as incremental_dataloader
 from utils import mkdir_p
 from dataset.exemplars_selection import *
@@ -138,6 +141,12 @@ def main(args):
         model = ClClipVariational(args)
     elif args.model == "clip_adapter":
         model = ClipAdapter(args)
+    elif args.model == "coop_adapter":
+        model = CoOpAdapter(args)
+    elif args.model == "coop_variational":
+        model = CoOpVariational(args)
+    elif args.model == "maple_variational":
+        model = MaPLe_var(args)
     else:
         raise NotImplementedError
 
